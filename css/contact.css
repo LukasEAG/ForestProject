@@ -82,6 +82,7 @@ h2 {
 .contact__data-info-desc {
   font-size: 1.4rem;
   text-align: start;
+  text-decoration: none;
 }
 .contact__data-info-desc--last-p {
   margin-bottom: 1em;
