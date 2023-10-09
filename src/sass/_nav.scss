@@ -1,0 +1,157 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgb(243, 239, 233);
+	z-index: 10;
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+	}
+
+	&__logo {
+		font-size: 2.5rem;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+	}
+
+	&__logo-link {
+		color: rgb(0, 0, 0);
+	}
+
+	&__list {
+		position: absolute;
+		top: 80px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh - 80px);
+		transform: translateX(100%);
+		opacity: 0;
+		background-color: rgb(243, 239, 233);
+		overflow: auto;
+		transition: transform 0.4s, opacity 0.4s;
+	}
+
+	&__item {
+		margin-top: 1.5em;
+		font-size: 2rem;
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	&__item-link {
+		position: relative;
+		padding: 1em 2em;
+		color: #000;
+	}
+
+	&__item-link::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 3px;
+		width: 100%;
+		background-color: #000;
+		transform: scalex(0);
+		transform-origin: right;
+		transition: transform 0.3s;
+	}
+
+	&__item-link:hover::after {
+		transform: scalex(1);
+		transform-origin: left;
+	}
+
+	&__mobile-btn {
+		padding: 0.5em;
+		border: none;
+		background-color: transparent;
+		font-size: 2.6em;
+		color: #000;
+		cursor: pointer;
+	}
+
+	&__mobile-btn-burger {
+		display: flex;
+		
+		&--noactive {
+			display: none;
+		}
+	}
+
+	&__mobile-btn-close {
+		display: none;
+
+		&--active {
+			display: flex;
+		}
+	}
+
+	.show-menu {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		&__logo {
+			font-size: 3.4rem;
+		}
+		&__list {
+			flex-direction: row;
+			justify-content: space-between;
+			position: static;
+			height: 80px;
+			width: auto;
+			transform: translateX(0);
+			opacity: 1;
+			background: none;
+			overflow: hidden;
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			margin-top: 0;
+			font-size: 1.6rem;
+		}
+
+		&__item-link, &__item-link .contact {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 100%;
+			background-color: transparent;
+			color: #000;
+			transition: color 0.4s, background-color 0.4s;
+
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
+		&__mobile-btn {
+			display: none;
+		}
+	}
+
+	.active {
+		background-color: #000;
+		color: #fff;
+
+	}
+}

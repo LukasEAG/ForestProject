@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 2em;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0em 2.2em;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.ofert {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding: 2em 0;
+}
+.ofert__text {
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.ofert__box {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid rgb(49, 219, 114);
+}
+.ofert__box:nth-of-type(3) {
+  border-bottom: none;
+}
+.ofert__box-title {
+  margin: 1em 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ofert__box-card {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.ofert__box-img {
+  display: flex;
+  margin: 1em 0;
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+}
+.ofert__box-img--one {
+  background-image: url(/dist/img/bench-2178847_1280.jpeg);
+}
+.ofert__box-img--two {
+  background-image: url(/dist/img/hut-3604055_1280.jpeg);
+}
+.ofert__box-img--three {
+  background-image: url(/dist/img/mountain-river-5765785_1280.jpeg);
+}
+.ofert__box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ofert__box-content-text {
+  margin: 0.5em 0;
+  font-size: 1.2rem;
+  line-height: 2.2;
+  max-width: 100%;
+  height: auto;
+}
+.ofert__box-content-title {
+  margin: 1em 0em 0.5em;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.ofert__box-content-list {
+  list-style: none;
+}
+.ofert__box-content-item {
+  margin-bottom: 0.5em;
+  font-size: 1.4rem;
+}
+.ofert__box-content-price {
+  padding: 0.5em 0.5em 1em;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.ofert__box-content-btn {
+  margin-bottom: 2em;
+  padding: 0.7em 5em;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 4px 11px -5px rgb(66, 68, 90);
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+.ofert__box-content-btn:hover {
+  background-color: rgb(49, 219, 114);
+  box-shadow: 0px 4px 11px -5px rgb(49, 219, 114);
+}
+
+@media (min-width: 576px) {
+  .ofert__title {
+    font-size: 3.4rem;
+  }
+  .ofert__text {
+    font-size: 1.4rem;
+  }
+  .ofert__box-title {
+    font-size: 2.4rem;
+  }
+  .ofert__box-content-text {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .ofert__title {
+    font-size: 3.4rem;
+  }
+  .ofert__text {
+    font-size: 1.8rem;
+  }
+  .ofert__box-title {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .ofert {
+    padding: 3em 0;
+  }
+  .ofert__box-card {
+    margin-top: 1.6em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .ofert__box-img {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-right: 1em;
+    background-size: cover;
+  }
+  .ofert__box-content {
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .ofert__box-content-title {
+    margin: 1em 0.5em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .ofert__box-content-text {
+    font-size: 1.2rem;
+  }
+  .ofert__box-content-item {
+    font-size: 1.2rem;
+  }
+  .ofert__box-content-price {
+    padding: 0.5em;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .ofert__text {
+    font-size: 1.6rem;
+  }
+  .ofert__box-title {
+    font-size: 2.8rem;
+  }
+  .ofert__box-content-text {
+    margin: 0 0 0 1em;
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=offer.css.map */
