@@ -34,4 +34,4 @@ This is my first project of creating webpage without using tutorials. Project Fo
 https://lukaseag.github.io/ForestProject/
 
 ###  Home page mockup
-!(/Forest Website.pdf)
+!(https://github.com/LukasEAG/ForestProject/Forest Website.pdf)
