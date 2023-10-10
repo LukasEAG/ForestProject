@@ -2,7 +2,7 @@
 
 Hi, my name is Łukasz and I'm trying to become Frontend-Developer.
 
-This is my first project of creating webpage without using tutorials. Project Forest is is an exercise performed at the end of the course in Mateusz Maj MMC School. Graphic project of home page was provided by course teacher, other subpages was made by me.
+This is my first project of creating webpage without using tutorials. Project Forest is an exercise performed at the end of the course in Mateusz Maj MMC School. Graphic project of home page was provided by course teacher, other subpages was made by me.
 
 ## Guidelines for the exercise:
 
@@ -33,4 +33,5 @@ This is my first project of creating webpage without using tutorials. Project Fo
 ## Live: 
 https://lukaseag.github.io/ForestProject/
 
-!/Forest Website.pdf
+###  Home page mockup
+!(/Forest Website.pdf)
